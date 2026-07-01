@@ -1,0 +1,78 @@
+{
+  "full_model": {
+    "name": "FULL MODEL (9 features)",
+    "feature_cols": [
+      "invoice_inflation_ratio",
+      "claim_lag_days",
+      "icd_is_vague",
+      "provider_avg_inflation",
+      "provider_claim_count",
+      "member_claim_count",
+      "amount_vs_benchmark",
+      "had_pre_audit_adjustment",
+      "icd_code_missing"
+    ],
+    "contamination": 0.104,
+    "precision": 0.3222,
+    "recall": 0.3203,
+    "f1": 0.3213,
+    "roc_auc": 0.8007,
+    "confusion_matrix": [
+      [
+        69179,
+        5879
+      ],
+      [
+        5930,
+        2795
+      ]
+    ],
+    "permutation_importance": {
+      "invoice_inflation_ratio": 0.1713,
+      "claim_lag_days": 0.0063,
+      "icd_is_vague": -0.0062,
+      "provider_avg_inflation": 0.0226,
+      "provider_claim_count": -0.0176,
+      "member_claim_count": -0.0065,
+      "amount_vs_benchmark": -0.0017,
+      "had_pre_audit_adjustment": 0.0321,
+      "icd_code_missing": -0.0002
+    }
+  },
+  "conservative_model": {
+    "name": "CONSERVATIVE MODEL (7 features, label-adjacent dropped)",
+    "feature_cols": [
+      "claim_lag_days",
+      "icd_is_vague",
+      "provider_avg_inflation",
+      "provider_claim_count",
+      "member_claim_count",
+      "amount_vs_benchmark",
+      "icd_code_missing"
+    ],
+    "contamination": 0.104,
+    "precision": 0.1288,
+    "recall": 0.1284,
+    "f1": 0.1286,
+    "roc_auc": 0.5269,
+    "confusion_matrix": [
+      [
+        67482,
+        7576
+      ],
+      [
+        7605,
+        1120
+      ]
+    ],
+    "permutation_importance": {
+      "claim_lag_days": 0.0062,
+      "icd_is_vague": -0.0065,
+      "provider_avg_inflation": 0.0191,
+      "provider_claim_count": -0.005,
+      "member_claim_count": 0.0029,
+      "amount_vs_benchmark": 0.0018,
+      "icd_code_missing": 0.0005
+    }
+  }
+}

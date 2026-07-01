@@ -1,0 +1,22 @@
+{
+  "full": [
+    "invoice_inflation_ratio",
+    "claim_lag_days",
+    "icd_is_vague",
+    "provider_avg_inflation",
+    "provider_claim_count",
+    "member_claim_count",
+    "amount_vs_benchmark",
+    "had_pre_audit_adjustment",
+    "icd_code_missing"
+  ],
+  "conservative": [
+    "claim_lag_days",
+    "icd_is_vague",
+    "provider_avg_inflation",
+    "provider_claim_count",
+    "member_claim_count",
+    "amount_vs_benchmark",
+    "icd_code_missing"
+  ]
+}
